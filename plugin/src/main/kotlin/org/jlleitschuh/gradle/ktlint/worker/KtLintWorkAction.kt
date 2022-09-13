@@ -49,7 +49,7 @@ abstract class KtLintWorkAction : WorkAction<KtLintWorkAction.KtLintWorkParamete
 
         parameters.filesToLint.files.forEach {
             val errors = mutableListOf<Pair<LintError, Boolean>>()
-            val ktLintParameters = KtLint.Params(
+            val ktLintParameters = KtLint.ExperimentalParams(
                 fileName = it.absolutePath,
                 text = it.readText(),
                 ruleSets = ruleSets,
