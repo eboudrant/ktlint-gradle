@@ -33,7 +33,7 @@ tasks.withType<KotlinCompile>() {
 }
 
 tasks.withType<PluginUnderTestMetadata>().configureEach {
-    pluginClasspath.from(configurations.compileOnly)
+    pluginClasspath.from(configurations.compileClasspath)
 }
 
 /**
