@@ -1,13 +1,10 @@
 package org.jlleitschuh.gradle.ktlint.android
 
-import com.android.build.api.dsl.AndroidSourceSet
 import com.android.build.api.dsl.BuildFeatures
 import com.android.build.api.dsl.BuildType
 import com.android.build.api.dsl.CommonExtension
 import com.android.build.api.dsl.DefaultConfig
 import com.android.build.api.dsl.ProductFlavor
-import com.android.build.api.dsl.SigningConfig
-import com.android.build.api.variant.Variant
 import com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet
 import org.gradle.api.Plugin
 import org.gradle.api.file.FileCollection
