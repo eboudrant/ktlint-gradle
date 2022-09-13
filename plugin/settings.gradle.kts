@@ -12,8 +12,6 @@ pluginManagement {
     }
 }
 
-enableFeaturePreview("VERSION_CATALOGS")
-
 plugins {
     `gradle-enterprise`
 }
