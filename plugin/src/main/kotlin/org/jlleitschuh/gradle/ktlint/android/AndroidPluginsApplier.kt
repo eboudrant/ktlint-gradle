@@ -8,7 +8,6 @@ import com.android.build.api.dsl.DefaultConfig
 import com.android.build.api.dsl.ProductFlavor
 import com.android.build.api.dsl.SigningConfig
 import com.android.build.api.variant.Variant
-import com.android.build.api.variant.VariantProperties
 import com.android.build.gradle.internal.api.DefaultAndroidSourceDirectorySet
 import org.gradle.api.Plugin
 import org.gradle.api.file.FileCollection
@@ -45,14 +44,10 @@ internal fun KtlintPlugin.PluginHolder.applyKtLintToAndroid(): (Plugin<in Any>) 
 
 @Suppress("UnstableApiUsage")
 private typealias AndroidCommonExtension = CommonExtension<
-    AndroidSourceSet,
     BuildFeatures,
     BuildType,
     DefaultConfig,
-    ProductFlavor,
-    SigningConfig,
-    Variant<VariantProperties>,
-    VariantProperties
+    ProductFlavor
     >
 
 /*
